@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc68767ab9.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Portfólio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Início</a></li>
+            <li><a href="#about" onclick="toggleMenu();">Sobre</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textbox">
+            <h2>Bem vindo!</h2>
+            <h3>Eu sou o Vinicius Vieira, <span>desenvolvedor Back-end.</span></h3><br>
+            <button>
+                <a href="https://github.com/Viniciu-s" class="btn" target="_blank">Github</a>
+            </button>
+            
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Sobre</h2>
+        </div>
+        <div class="content">
+            <div class="contentbox">
+                <h3>Sobre</h3>
+                <p>A cada dia aprendendo mais a linguagem Javascript e suas funcionalidades com o node, e nas horas vagas gosto de investir e analisar o mercado de criptomoedas.
+                    <br><br> Fique a vontade para entrar em contato comigo a qualquer hora, é só chamar!.</p><br><br>
+                    <button>
+                        <a href="https://viniciu-s.github.io/curriculum/" class="btn2" target="_blank">Curriculum</a>
+                    </button>
+            </div>
+            <div>
+                <img src="img/avataar.png" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contato</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <div class="contactInfobox">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>viniciusvsoares00@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="text">
+                            <h3>Celular</h3>
+                            <p>(11) 93035-6193</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-building"></i></div>
+                        <div class="text">
+                            <h3>Cidade</h3>
+                            <p>São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2021 Vinicius Vieira. All Right Reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

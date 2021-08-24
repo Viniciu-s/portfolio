@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(img/banner.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    color: black;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbox{
+    padding-right: 30px;
+}
+
+.contentbox h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn2{
+    position: relative;
+    background: black;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn2:hover{
+    background-color: #fff;
+    color: #111;
+    transition: 0.5s;
+}
+
+.contact{
+    background: #111;
+}
+
+.heading{
+    color: #fff;
+}
+
+.contactInfo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contactInfo{
+    min-width: 40%;
+}
+
+.contactInfobox{
+    position: relative;
+}
+
+.contactInfobox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfobox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactInfobox .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfobox .box .text h3{
+    font-weight: 500;
+    color: rgb(53, 53, 201);
+    margin-bottom: 0;
+}
+
+.copyright{
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky {
+        padding: 20px 100px;
+    }
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url(img/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1.5em;
+    }
+    .btn{
+        margin-top: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentbox h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .contactInfo{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:600px){
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+}
